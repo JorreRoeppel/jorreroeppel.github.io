@@ -28,21 +28,10 @@
             <p>
                 In this project, we investigated how different feature-selection
                 methods influence the classification of HER2+, HR+, and
-                triple-negative breast cancer subtypes. Because the dataset
-                contained only 100 labelled samples and 2,834 genomic regions,
-                feature reduction was necessary to improve generalization and
-                limit overfitting.
-            </p>
-        
-            <p>
-                We selected genomic regions using ANOVA, PAM50 gene matching,
-                Random Forest feature importance, and an additional binary
-                Elastic Net feature-selection step designed to improve
-                separation between HR+ and triple-negative samples.
-                Classification performance was evaluated using Random Forest
+                triple-negative breast cancer subtypes. Classification performance was evaluated using Random Forest
                 models within a repeated nested cross-validation framework.
             </p>
-        
+    
             <p>
                 The best-performing approach combined PAM50-overlapping
                 regions with Elastic Net-selected features, achieving an
@@ -53,7 +42,7 @@
             </p>
         
             <img src="images/breast-cancer-project.png"
-                 alt="x">
+                 >
         </section>
 
 
