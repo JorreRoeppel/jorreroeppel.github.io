@@ -90,7 +90,7 @@ p {
 }
 
 .project p {
-    color: var(--muted);
+    color: #ffffff;
     margin: 0 0 18px;
     max-width: 680px;
 }
