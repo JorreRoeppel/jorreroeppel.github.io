@@ -1,13 +1,10 @@
 
-/* ---------- Global styles ---------- */
-
 :root {
-    --background: #0b0f19;
-    --surface: #121a2a;
-    --text: #e6edf7;
-    --muted: #9aa8bd;
-    --accent: #7c9cff;
-    --border: #253149;
+    --bg: #10141c;
+    --text: #e6eaf0;
+    --muted: #a5afbf;
+    --accent: #91b8ff;
+    --line: #303949;
 }
 
 * {
@@ -20,183 +17,109 @@ html {
 
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background: var(--background);
+    background: var(--bg);
     color: var(--text);
-    line-height: 1.7;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
 }
-
-a {
-    color: var(--accent);
-    text-decoration: none;
-}
-
-a:hover {
-    color: white;
-}
-
-/* ---------- Navigation ---------- */
 
 nav {
+    max-width: 900px;
+    margin: auto;
+    padding: 22px 24px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 20px;
-    padding: 22px 8%;
-    border-bottom: 1px solid var(--border);
-    background: var(--background);
+    border-bottom: 1px solid var(--line);
 }
 
 nav strong {
-    font-size: 1.1rem;
-    letter-spacing: 0.5px;
+    color: var(--text);
 }
 
 nav a {
     color: var(--muted);
-    margin-left: 24px;
-    font-size: 0.95rem;
+    margin-left: 22px;
+    text-decoration: none;
 }
 
-nav a:hover {
+nav a:hover,
+a:hover {
     color: var(--accent);
 }
 
-/* ---------- Main content ---------- */
-
-.container {
-    max-width: 1100px;
+main {
+    max-width: 900px;
     margin: 0 auto;
-    padding: 85px 28px;
-}
-
-.eyebrow {
-    color: var(--accent);
-    font-size: 0.8rem;
-    font-weight: bold;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+    padding: 55px 24px 90px;
 }
 
 h1 {
-    font-size: clamp(2.8rem, 7vw, 5rem);
-    line-height: 1.1;
-    letter-spacing: -2px;
-    margin: 20px 0;
+    font-size: 2.5rem;
+    line-height: 1.25;
+    margin-top: 0;
+    letter-spacing: -1px;
 }
 
 h2 {
-    font-size: 2rem;
-    letter-spacing: -0.5px;
+    font-size: 1.45rem;
+    margin-top: 42px;
 }
 
-.intro {
-    color: var(--muted);
-    font-size: 1.15rem;
-    max-width: 680px;
+p {
+    margin: 14px 0;
 }
 
-.hero {
-    padding-bottom: 65px;
-}
-
-.section-heading {
-    margin-bottom: 28px;
-}
-
-/* ---------- Project cards ---------- */
-
-.project-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 22px;
-}
-
-.project-card {
-    display: flex;
-    flex-direction: column;
-    padding: 26px;
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    transition: border-color 0.2s, transform 0.2s;
-}
-
-.project-card:hover {
-    border-color: var(--accent);
-    transform: translateY(-3px);
-}
-
-.project-number {
+a {
     color: var(--accent);
-    font-family: monospace;
-    font-size: 0.9rem;
 }
 
-.project-card h3 {
-    font-size: 1.3rem;
-    margin: 14px 0 10px;
-}
-
-.project-card p {
+.muted {
     color: var(--muted);
-    font-size: 0.95rem;
-    margin-top: 0;
+}
+
+.project {
+    padding: 22px 0;
+    border-bottom: 1px solid var(--line);
+}
+
+.project h2 {
+    margin: 0 0 8px;
+    font-size: 1.25rem;
+}
+
+.project p {
+    margin: 8px 0;
 }
 
 .tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin: 10px 0 20px;
-}
-
-.tag {
-    padding: 4px 10px;
-    border: 1px solid var(--border);
-    border-radius: 5px;
-    color: #b8c7e0;
-    font-size: 0.78rem;
-}
-
-.project-link {
-    margin-top: auto;
-    padding-top: 10px;
-    font-weight: bold;
-}
-
-/* ---------- Footer ---------- */
-
-footer {
-    border-top: 1px solid var(--border);
-    padding: 28px;
-    text-align: center;
     color: var(--muted);
     font-size: 0.9rem;
 }
 
-/* ---------- Mobile layout ---------- */
+footer {
+    max-width: 900px;
+    margin: auto;
+    padding: 24px;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 0.9rem;
+}
 
-@media (max-width: 650px) {
+@media (max-width: 520px) {
     nav {
-        padding: 18px 6%;
         align-items: flex-start;
+        gap: 12px;
+        flex-wrap: wrap;
     }
 
     nav a {
-        margin-left: 12px;
-        font-size: 0.85rem;
-    }
-
-    .container {
-        padding: 55px 20px;
-    }
-
-    .project-grid {
-        grid-template-columns: 1fr;
+        margin-left: 0;
+        margin-right: 16px;
     }
 
     h1 {
-        letter-spacing: -1px;
+        font-size: 2rem;
     }
 }
