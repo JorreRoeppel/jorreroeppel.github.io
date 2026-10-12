@@ -83,17 +83,21 @@ p {
 }
 
 .project h4 {
-    margin: 0 0 12px;
-    font-size: 1.45rem;
+    color: #ffffff;
+    margin: 0 0 10px;
+    font-size: 1.15rem;
     font-weight: 600;
-    line-height: 1.4;
+    line-height: 1.5;
 }
 
 .project p {
     color: #ffffff;
+    font-size: 14px;
+    line-height: 1.7;
     margin: 0 0 14px;
     max-width: 680px;
 }
+
 
 .project img {
     display: block;
