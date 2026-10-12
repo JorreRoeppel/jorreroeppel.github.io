@@ -21,18 +21,41 @@
     <main>
         <h1>Projects</h1>
 
+        
         <section class="project">
-            <h2>Project Title One</h2>
-
+            <h2>Classifying Breast Cancer Subtypes via Biologically Reasoned Feature Selection in Random Forest</h2>
+        
             <p>
-                A short description of the project goes here.
-                Explain briefly what you worked on and what the
-                project aimed to achieve.
+                In this project, we investigated how different feature-selection
+                methods influence the classification of HER2+, HR+, and
+                triple-negative breast cancer subtypes. Because the dataset
+                contained only 100 labelled samples and 2,834 genomic regions,
+                feature reduction was necessary to improve generalization and
+                limit overfitting.
             </p>
-
-            <img src="images/project-one.png"
-                 alt="Preview of Project One">
+        
+            <p>
+                We selected genomic regions using ANOVA, PAM50 gene matching,
+                Random Forest feature importance, and an additional binary
+                Elastic Net feature-selection step designed to improve
+                separation between HR+ and triple-negative samples.
+                Classification performance was evaluated using Random Forest
+                models within a repeated nested cross-validation framework.
+            </p>
+        
+            <p>
+                The best-performing approach combined PAM50-overlapping
+                regions with Elastic Net-selected features, achieving an
+                accuracy of 0.84 ± 0.067. PAM50-overlapping regions alone
+                achieved 0.82 ± 0.077, outperforming ANOVA-selected features
+                (0.73 ± 0.087), Random Forest-based feature selection
+                (0.70 ± 0.045), and the full-feature baseline (0.67 ± 0.092).
+            </p>
+        
+            <img src="images/breast-cancer-project.png"
+                 alt="x">
         </section>
+
 
         <section class="project">
             <h2>Project Title Two</h2>
