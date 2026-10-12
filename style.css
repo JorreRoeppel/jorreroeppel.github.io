@@ -1,158 +1,28 @@
 
-/* ===== Dark academic website ===== */
+/* ===== Minimal project list ===== */
 
-:root {
-    color-scheme: dark;
-    --bg: #111318;
-    --text: #e6e8ed;
-    --muted: #a0a6b4;
-    --accent: #8ab4f8;
-    --line: #30343e;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-html {
-    background: var(--bg);
-    scroll-behavior: smooth;
-}
-
-body {
-    margin: 0;
-    min-height: 100vh;
-    background-color: var(--bg);
-    color: var(--text);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    line-height: 1.8;
-}
-
-/* Centered navigation */
-nav {
-    width: min(100% - 40px, 820px);
-    margin: 0 auto;
-    padding: 24px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-    border-bottom: 1px solid var(--line);
-}
-
-nav strong {
-    color: var(--text);
-    white-space: nowrap;
-}
-
-nav div {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 22px;
-}
-
-nav a {
-    color: var(--muted);
-    text-decoration: none;
-}
-
-nav a:hover {
-    color: var(--accent);
-}
-
-/* Centered page column */
-main {
-    width: min(100% - 40px, 760px);
-    margin: 0 auto;
-    padding: 64px 0 90px;
-}
-
-h1 {
-    color: var(--text);
-    font-size: clamp(2.2rem, 5vw, 3rem);
-    line-height: 1.25;
-    letter-spacing: -1px;
-    margin: 0 0 24px;
-}
-
-h2 {
-    color: var(--text);
-    font-size: 1.4rem;
-    margin-top: 42px;
-    margin-bottom: 12px;
-}
-
-p {
-    margin: 0 0 18px;
-}
-
-a {
-    color: var(--accent);
-}
-
-a:hover {
-    color: #c0d7ff;
-}
-
-.muted,
-.tags {
-    color: var(--muted);
-}
-
-.muted {
-    font-size: 0.95rem;
-}
-
-/* Project list */
 .project {
-    padding: 24px 0;
-    border-bottom: 1px solid var(--line);
+    padding: 32px 0;
+    border-bottom: none;
 }
 
 .project h2 {
-    margin: 0 0 12px;
-    font-size: 1.25rem;
+    margin: 0 0 8px;
+    font-size: 1.45rem;
+    font-weight: 600;
 }
 
 .project p {
-    margin-bottom: 14px;
-}
-
-.project .tags {
-    font-size: 0.9rem;
-}
-
-.project a {
-    text-decoration: none;
-}
-
-.project a:hover {
-    text-decoration: underline;
-}
-
-/* Footer aligned with the page */
-footer {
-    width: min(100% - 40px, 760px);
-    margin: 0 auto;
-    padding: 24px 0;
-    border-top: 1px solid var(--line);
     color: var(--muted);
-    font-size: 0.9rem;
+    margin: 0 0 18px;
+    max-width: 680px;
 }
 
-/* Mobile screens */
-@media (max-width: 520px) {
-    nav {
-        align-items: flex-start;
-        flex-direction: column;
-    }
-
-    nav div {
-        gap: 18px;
-    }
-
-    main {
-        padding-top: 44px;
-    }
+.project img {
+    display: block;
+    width: 100%;
+    max-width: 680px;
+    height: auto;
+    margin-top: 18px;
+    border-radius: 6px;
 }
