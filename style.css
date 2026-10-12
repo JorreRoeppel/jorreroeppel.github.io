@@ -5,7 +5,7 @@
     color-scheme: dark;
     --background: #212121;
     --text: #ffffff;
-    --muted: #aaaaaa;
+    --muted: #ffffff;
     --link: #8ab4f8;
 }
 
@@ -111,4 +111,11 @@ footer {
     font-size: 0.9rem;
     margin-top: 48px;
     padding: 20px 0;
+}
+.project h2,
+.project h4,
+.project p,
+footer,
+.muted {
+    color: #ffffff !important;
 }
